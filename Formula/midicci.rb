@@ -2,8 +2,8 @@ class Midicci < Formula
   desc "midicci MIDI-CI tools and libraries"
   homepage "https://github.com/atsushieno/midicci"
   url "https://github.com/atsushieno/midicci.git",
-      revision: "0.1"
-  version "0.1.0"
+      revision: "0.1.1"
+  version "0.1.1"
   license "MIT"
   head "https://github.com/atsushieno/midicci.git", branch: "main"
 
@@ -18,7 +18,7 @@ class Midicci < Formula
     system "cmake", "-S", ".", "-B", "build", "-G", "Ninja",
                     "-DCMAKE_BUILD_TYPE=Release",
                     "-DCMAKE_INSTALL_PREFIX=#{prefix}",
-                    "-DUAPMD_VERSION=#{version}"
+                    "-DMIDICCI_VERSION=#{version}"
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
