@@ -10,7 +10,6 @@ class Midicci < Formula
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
-  depends_on "qt@5"
   depends_on "sdl3"
 
   def install
