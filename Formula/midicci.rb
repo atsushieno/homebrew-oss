@@ -1,4 +1,4 @@
-class Uapmd < Formula
+class Midicci < Formula
   desc "midicci MIDI-CI tools and libraries"
   homepage "https://github.com/atsushieno/midicci"
   url "https://github.com/atsushieno/midicci.git",
