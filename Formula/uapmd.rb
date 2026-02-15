@@ -2,20 +2,17 @@ class Uapmd < Formula
   desc "Ubiquitous Audio Plugin MIDI Device tools and libraries"
   homepage "https://github.com/atsushieno/uapmd"
   url "https://github.com/atsushieno/uapmd.git",
-      revision: "0.1.4"
-  version "0.1.4"
+      revision: "0.2.0"
+  version "0.2.0"
   license "MIT"
   head "https://github.com/atsushieno/uapmd.git", branch: "main"
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
-  depends_on "qt@5"
   depends_on "sdl3"
 
   def install
-    ENV.append_path "CMAKE_PREFIX_PATH", Formula["qt@5"].opt_prefix
-
     system "cmake", "-S", ".", "-B", "build", "-G", "Ninja",
                     "-DCMAKE_BUILD_TYPE=Release",
                     "-DCMAKE_INSTALL_PREFIX=#{prefix}",

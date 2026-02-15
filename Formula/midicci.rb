@@ -2,8 +2,8 @@ class Midicci < Formula
   desc "midicci MIDI-CI tools and libraries"
   homepage "https://github.com/atsushieno/midicci"
   url "https://github.com/atsushieno/midicci.git",
-      revision: "0.1.4"
-  version "0.1.4"
+      revision: "0.2.0"
+  version "0.2.0"
   license "MIT"
   head "https://github.com/atsushieno/midicci.git", branch: "main"
 
@@ -13,8 +13,6 @@ class Midicci < Formula
   depends_on "sdl3"
 
   def install
-    ENV.append_path "CMAKE_PREFIX_PATH", Formula["qt@5"].opt_prefix
-
     system "cmake", "-S", ".", "-B", "build", "-G", "Ninja",
                     "-DCMAKE_BUILD_TYPE=Release",
                     "-DCMAKE_INSTALL_PREFIX=#{prefix}",
