@@ -2,8 +2,8 @@ class Midicci < Formula
   desc "midicci MIDI-CI tools and libraries"
   homepage "https://github.com/atsushieno/midicci"
   url "https://github.com/atsushieno/midicci.git",
-      revision: "0.3.0"
-  version "0.3.0"
+      revision: "0.3.1"
+  version "0.3.1"
   license "MIT"
   head "https://github.com/atsushieno/midicci.git", branch: "main"
 
