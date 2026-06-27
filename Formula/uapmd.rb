@@ -2,8 +2,8 @@ class Uapmd < Formula
   desc "Ubiquitous Audio Plugin MIDI Device tools and libraries"
   homepage "https://github.com/atsushieno/uapmd"
   url "https://github.com/atsushieno/uapmd.git",
-      revision: "0.3.1"
-  version "0.3.1"
+      revision: "0.5.0"
+  version "0.5.0"
   license "MIT"
   head "https://github.com/atsushieno/uapmd.git", branch: "main"
 
